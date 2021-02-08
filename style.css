@@ -1,0 +1,15 @@
+.food  {
+    font-size: 20px;
+    padding: 20px;
+}
+.food h3 {
+    font-size: 30px;
+}
+#show-meal {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap : 10px;
+}
+#show-detail {
+    padding: 20px;
+}
