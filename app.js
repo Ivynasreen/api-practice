@@ -17,6 +17,7 @@ function showMeal() {
 const displayMeal = meals => {
     // console.log(meals);
     const itemDiv = document.getElementById("show-meal");
+    itemDiv.innerHTML = "";
     for (let i = 0; i < meals.length; i++) {
         const meal = meals[i];
         //    console.log(meal.strMeal); 
