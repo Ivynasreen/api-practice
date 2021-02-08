@@ -18,18 +18,18 @@ const displayMeal = meals => {
     // console.log(meals);
     const itemDiv = document.getElementById("show-meal");
     itemDiv.innerHTML = "";
-    for (let i = 0; i < meals.length; i++) {
-        const meal = meals[i];
-        //    console.log(meal.strMeal); 
+    meals. forEach(meal => {
+    //  console.log(meal.strMeal); 
         const mealDiv = document.createElement('div');
         mealDiv.className = 'food';
         const mealInfo = `
         <img onclick="displayMealDetail('${meal.strMeal}')" width = "300px" src = "${meal.strMealThumb}" >
         <h3 class="food-name">${meal.strMeal}</h3>
-        `
+         `
         mealDiv.innerHTML = mealInfo;
         itemDiv.appendChild(mealDiv);
-    }
+    });
+       
 }
 
 const displayMealDetail = name => {
